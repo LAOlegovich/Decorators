@@ -39,11 +39,11 @@ class Cook_book:
             str+= '\n__________________'
         return str
          
-   
-c_b_1 = Cook_book()
-c_b_1.get_recipes(file_path = "./recipes.txt")
-print(c_b_1)
-print(c_b_1.get_shop_list_by_dishes(['Запеченный картофель','Омлет'], 2))
+if __name__ == "__main__":
+    c_b_1 = Cook_book()
+    c_b_1.get_recipes(file_path = "./recipes.txt")
+    print(c_b_1)
+    print(c_b_1.get_shop_list_by_dishes(['Запеченный картофель','Омлет'], 2))
 
 
 
